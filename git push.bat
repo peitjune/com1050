@@ -14,9 +14,6 @@ echo ===== Commit =====
 set /p msg="Nhap commit message: "
 git commit -m "%msg%"
 
-echo ===== Pull (tranh loi) =====
-git pull origin main --rebase
-
 echo ===== Push =====
 git push origin main
 
