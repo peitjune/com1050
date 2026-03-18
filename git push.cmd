@@ -42,8 +42,14 @@ echo ===== Commit =====
 set /p msg="Nhap commit message: "
 git commit -m "%msg%"
 
+echo ===== Nhap ten branch can up =====
+echo.
+set /p BRANCH="Nhap ten branch (vd: main): "
+
 echo ===== Push =====
-git push origin main
+echo.
+echo Dang push len branch %BRANCH%...
+git push origin %BRANCH%
 
 echo ===== DONE =====
 pause
