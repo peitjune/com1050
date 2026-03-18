@@ -52,16 +52,10 @@ git commit -m "%msg%"
 echo ===== Nhap ten branch can up =====
 echo.
 set /p BRANCH="Nhap ten branch (vd: main): "
-git switch %BRANCH%
-
-echo.
-echo ===== Pull (tranh loi) =====
-git pull origin %BRANCH% --allow-unrelated-histories
 
 echo ===== Push =====
 echo.
 echo Dang push len branch %BRANCH%...
-Git branch -M %BRANCH%
 git push origin %BRANCH%
 
 echo ===== DONE =====
